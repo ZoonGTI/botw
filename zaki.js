@@ -190,6 +190,8 @@ const levelRole = getLevelingLevel(m.sender)
 if (budy.includes('https://chat.whatsapp.com/')) {
                if (!m.key.fromMe) {
                reply('*｢  LINK DETECTED  ｣*\nMaaf Anda Akan Di Kick Karena Antilink Di Group Ini Aktif ')
+        if (isAdmins) return m.reply(`Ehh sorry you admin`)
+        if (isCreator) return m.reply(`Ehh sorry you are the owner of me`)
                let sianj = m.sender
                await Zaki.groupParticipantsUpdate(m.chat, [sianj], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
                }
@@ -604,7 +606,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             }
             break
 	    case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                Zaki.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/5Gpzr1Q/20220422-170038.jpg' }, caption: `*── 「 DONATE 」 ──*\n\n_Kalian Bisa Dukung Bot Lewat Donate Ke :_\n _》Dana : 083822910734_\n _》Pulsa : 083822910734 (axis)_\n _》Pulsa : 083822910734 ( Indosat )_\n\n_Donate Kalian Sangat Berarti._\n\n_Contact person Owner:_\n_wa.me/6285878313791_` }, { quoted: m })
+                Zaki.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/5Gpzr1Q/20220422-170038.jpg' }, caption: `*── 「 DONATE 」 ──*\n\n_Kalian Bisa Dukung Bot Lewat Donate Ke :_\n _》Dana : 083822910734_\n _》Pulsa : 083822910734 (axis)_\n _》Pulsa : 083822910734 ( Indosat )_\n\n_Donate Kalian Sangat Berarti._\n\n_Contact person Owner:_\n_wa.me/6283822910734_` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
@@ -2315,8 +2317,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
     + 'N:;ZoonGT;;;'
     + 'FN:ZoonGT\n'
     + 'ORG:𝙸 𝙰𝚖 ZoonGT;\n'
-    + 'item1.TEL;type=CELL;type=VOICE;waid=6285878313791:+62 858-7831-3791\n' 
-    + 'item1.X-ABLabel:Creator Chitanda - MDt\n'
+    + 'item1.TEL;type=CELL;type=VOICE;waid=6283822910734:+62 838-2291-0734\n' 
+    + 'item1.X-ABLabel:Creator ZoonBot\n'
     + 'item2.EMAIL;type=INTERNET:helloiamZoonGT@gmail.com\n'
     + 'item2.X-ABLabel:Email\n'
     + 'item3.URL:https://instagram.com\n'
