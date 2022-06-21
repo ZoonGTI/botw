@@ -2331,12 +2331,12 @@ Zaki.sendMessage(m.chat, { contacts: { displayName: '𝙸 𝙰𝚖 ZoonGT', cont
             break            
                     case 'bug': case 'report': {
                     	if(!text) throw `Enter The Bug Example\n\n${command} Menu Error `
-                    	Zaki.sendMessage(`6285878313791@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	Zaki.sendMessage(`6283822910734@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break 
-case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'zaki': case 'doge':{
+case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'zoon': case 'doge':{
                 anu = `Hi ${pushname} 🤚`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -2436,6 +2436,9 @@ _*🇯🇵 : このボットの機能のリスト*_.
   » ${prefix}kick @user
   » ${prefix}promote @user
   » ${prefix}demote @user
+  » ${prefix}antilink On/Off
+  » ${prefix}mute On/Off
+  » ${prefix}antiwame On/Off
   
   *｢  DOWNLOAD MENU  ｣*    
   » ${prefix}tiktoknowm [url]
@@ -2548,11 +2551,6 @@ _*🇯🇵 : このボットの機能のリスト*_.
   » ${prefix}start
   » ${prefix}next
   » ${prefix}stop
-
-  *｢  BOT MENU  ｣*  	
-  » ${prefix}antilink On/Off
-  » ${prefix}mute On/Off
-  » ${prefix}antiwame On/Off
 
   *｢  OWNER MENU  ｣*    
   » ${prefix}chat [option]
